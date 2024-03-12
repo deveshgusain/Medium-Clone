@@ -5,7 +5,7 @@ export const DropDown = () => {
     return (
         <div className="absolute mt-10  right-0">
             <button
-            onClick={(e)=>{
+            onClick={()=>{
                 localStorage.removeItem('token');
                 navigate('/signin')
             }}

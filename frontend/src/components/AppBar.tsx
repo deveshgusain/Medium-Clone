@@ -19,7 +19,7 @@ export const AppBar = () => {
                         New
                     </button>
                 </Link>
-                <div onClick={(e) => setIsClicked(!isClicked)} className="cursor-pointer relative">    
+                <div onClick={() => setIsClicked(!isClicked)} className="cursor-pointer relative">    
                     <Avatar name="Devesh" size="medium" />
                 </div>
                 {isClicked ? <DropDown /> : null}
